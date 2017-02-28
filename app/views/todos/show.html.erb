@@ -1,10 +1,10 @@
 <h1>Showing a Todo</h1>
-
 <p>
   name: <%= @todo.name %>
 </p>
 <p>
 description: <%= @todo.description %>
+</p>
+<br>
 <%= link_to "Edit", edit_todo_path(@todo) %> |
 <%= link_to "Back to List", todos_path %>
-</p>

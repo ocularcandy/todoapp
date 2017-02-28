@@ -23,7 +23,6 @@ class TodosController < ApplicationController
   end
 
   def update
-
     if @todo.update(todo_params)
       flash[:notice] = "Todo updated!"
       redirect_to todo_path(@todo)
